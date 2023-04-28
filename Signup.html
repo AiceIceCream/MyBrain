@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>Login & Signup Form</title>-->
+    <link rel="stylesheet" href="Signup.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="form signup">
+        <header>Signup</header>
+        <form action="#">
+          <input type="text" placeholder="Full name" id="usr" required />
+          <input type="text" placeholder="Email address" id="eml" required />
+          <input type="password" placeholder="Password" id="pwd" required />
+          <div class="checkbox">
+            <input type="checkbox" id="signupCheck" />
+            <label for="signupCheck">I accept all terms & conditions</label>
+          </div>
+          <input type="submit" value="Signup" onclick="addData()"/>
+        </form>
+      </div>
+
+      <div class="form login">
+        <header>Login</header>
+        <form action="#">
+          <input type="text" placeholder="Email address" id="email" required />
+          <input type="password" placeholder="Password" id="password" required />
+          <a href="#">Forgot password?</a>
+          <input type="submit" value="Login" onclick="auth()" />
+        </form>
+      </div>
+
+      <script>
+        const wrapper = document.querySelector(".wrapper"),
+          signupHeader = document.querySelector(".signup header"),
+          loginHeader = document.querySelector(".login header");
+
+        loginHeader.addEventListener("click", () => {
+          wrapper.classList.add("active");
+        });
+        signupHeader.addEventListener("click", () => {
+          wrapper.classList.remove("active");
+        });
+
+        function auth(){
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        var getEmail = localStorage.getItem('userEmail');
+	    var getPwd = localStorage.getItem('userPwd');
+
+          if(email == "admin@gmail.com" && password == "admin123"){
+            window.location.assign("home.html");
+            alert("Login Successfully");
+          }
+          
+          if(email == getEmail){
+            if(password == getPwd){
+                window.location.assign("home.html");
+                alert("Login Sucessful");
+            }
+            else alert("Wrong password")
+          }
+          else{
+            alert("Unidentified User");
+            return;
+          } 
+        }
+
+        function addData(){
+            var email2 = document.getElementById("eml").value;
+            var password2 = document.getElementById("pwd").value;
+
+            localStorage.setItem('userEmail',email2);
+	        localStorage.setItem('userPwd',password2);
+        }
+
+      </script>
+    </section>
+  </body>
+</html>
