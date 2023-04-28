@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Nunito:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: "Vermin";
+    src: url(Fonts/VerminVibesV-Zlg3.ttf);
+}
+
+
+:root{
+    --red: #680000;
+    --black: #000000;
+    --light-color:#181818;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: #ffff;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: Vermin;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #ffff;
+    transition: 1s;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #ffff;
+    background: var(--red);
+
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #ffff;
+    border-radius: 50%;
+    background: var(--red);
+    transition: .5s;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--red);
+    background: #ffff;
+    transform: scale(1.1);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.li,ul
+{
+    list-style:none;padding:0;margin:0
+}
+
+
+.sec-title
+{
+    position:relative;padding-bottom:40px
+}
+.sec-title .title
+{
+    position:relative;
+    color:maroon;
+    font-size:18px;
+    font-weight:700;
+    padding-right:50px;
+    margin-bottom:15px;display:inline-block;
+    text-transform:capitalize
+}
+.sec-title .title:before{
+        position:absolute;
+        content:'';right:0;
+        bottom:7px;width:40px;
+        height:1px;background-color:#bbb
+}
+    .sec-title h2{
+        position:relative;
+        color:#252525;
+        font-size:36px;
+        font-weight:700;
+        line-height:1.5em;
+        display:block
+    }
+    .sec-title.light h2
+    {
+        color:#fff
+    }
+    .contact-page-section
+    {
+        position:relative;
+        padding-top:110px; 
+        padding-bottom: 110px;
+    }
+    .contact-page-section .inner-container
+    {
+        position:relative;
+        z-index:1;background-color:maroon;
+        box-shadow:0 0 15px 5px rgba(0,0,0,.1)
+    }
+    .contact-page-section .form-column
+    {
+        position:relative;
+        padding:0 0 0 15px
+    }
+    .contact-page-section .form-column .inner-column
+    {
+        position:relative;
+        padding:60px 45px 30px;
+        background-color:#fff
+    }
+    .contact-page-section .info-column
+    {
+        position:relative
+    }
+    .contact-page-section .info-column .inner-column
+    {
+        position:relative;padding:60px 35px
+    }
+    .contact-page-section .info-column h2
+    {
+        position:relative;color:#fff;
+        font-size:30px;font-weight:700;
+        line-height:1.4em;margin-bottom:45px
+    }
+    .contact-page-section .info-column .list-info
+    {
+        position:relative;
+        margin-bottom:60px
+    }
+    .contact-page-section .info-column .list-info li{
+        position:relative;
+        margin-bottom:25px;font-size:18px;color:#fff;
+        line-height:1.8em;padding-left:45px
+    }
+    .contact-page-section .info-column .list-info li:last-child
+    {
+        margin-bottom:0
+    }
+        .contact-page-section .info-column .list-info li i
+        {
+            position:absolute;
+            left:0;top:8px;color:#fff;
+            font-size:30px
+        }
+    .contact-form
+    {
+        position:relative
+    }
+    .contact-form .form-group
+    {
+        position:relative;
+        margin-bottom:20px
+    }
+    .contact-form input[type=text],.contact-form input[type=email],.contact-form textarea
+    {
+        position:relative;
+        display:block;
+        width:100%;
+        height:60px;
+        color:#222;
+        font-size:14px;
+        line-height:38px;
+        padding:10px 30px;
+        border:1px solid #ddd;
+        background-color:#fff;
+        transition:all .3s ease;
+        -ms-transition:all .3s ease;
+        -webkit-transition:all .3s ease
+    }
+    .contact-form input[type=text]:focus,.contact-form input[type=email]:focus,.contact-form textarea:focus
+    {
+        border-color:maroon}
+        .contact-form textarea
+        {height:250px;
+        resize:none;
+        }
+    .contact-form .theme-btn
+    {
+        font-size:16px;
+        font-weight:700;
+        margin-top:10px;
+        text-transform:capitalize;
+        padding:16px 39px;
+        border:2px solid maroon;
+        font-family:Arimo,sans-serif;
+        background:maroon;
+        display:inline-block;
+        position:relative;
+        line-height:24px;cursor:pointer;
+        color:#fff;
+    }
+    .contact-form .theme-btn:hover
+    {
+        color:#00b8ca;
+        border-color:#00b8ca;
+        background:0 0
+    }
+    .contact-form input.error,.contact-form select.error,.contact-form textarea.error
+    {
+        border-color:red!important
+    }
+    .contact-form label.error
+    {
+        display:block;
+        line-height:24px;
+        padding:5px 0 0;
+        margin:0;
+        text-transform:uppercase;
+        font-size:12px;color:red;
+        font-weight:500
+    }
+    .social-icon-four
+    {
+        position:relative
+    }
+    .social-icon-four li
+    {
+        position:relative;
+        margin-right:18px;
+        display:inline-block
+    }
+    .social-icon-four li.follow
+    {
+        color:#fff;
+        font-weight:600;
+        font-size:24px;display:block;
+        margin-bottom:20px
+    }
+    .social-icon-four li a
+    {
+        position:relative;
+        font-size:20px;
+        color:#fff;
+        -webkit-transition:all .3s ease;
+        -ms-transition:all 
+         .3s ease;
+         -o-transition:all 
+         .3s ease;-moz-transition:all 
+         .3s ease;transition:all 
+         .3s ease
+}
+.social-icon-four li a:hover{
+    color:#222
+}
