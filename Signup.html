@@ -23,7 +23,9 @@
         </form>
       </div>
 
-      <div class="form login">
+      <a href="login.html">Log in Instead</a>
+
+      <!-- <div class="form login">
         <header>Login</header>
         <form action="#">
           <input type="text" placeholder="Email address" id="email" required />
@@ -31,19 +33,14 @@
           <a href="#">Forgot password?</a>
           <input type="submit" value="Login" onclick="auth()" />
         </form>
-      </div>
+      </div> -->
+      
 
       <script>
-        const wrapper = document.querySelector(".wrapper"),
-          signupHeader = document.querySelector(".signup header"),
-          loginHeader = document.querySelector(".login header");
 
-        loginHeader.addEventListener("click", () => {
-          wrapper.classList.add("active");
-        });
-        signupHeader.addEventListener("click", () => {
-          wrapper.classList.remove("active");
-        });
+        if(document.getElementById("email").value === ""){
+          
+        }
 
         function auth(){
         var email = document.getElementById("email").value;
@@ -64,10 +61,6 @@
             }
             else alert("Wrong password")
           }
-          else{
-            alert("Unidentified User");
-            return;
-          } 
         }
 
         function addData(){
