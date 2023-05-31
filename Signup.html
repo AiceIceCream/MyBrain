@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<title>Login & Signup Form</title>-->
     <link rel="stylesheet" href="Signup.css" />
+    <script src="signup.js"></script>
   </head>
   <body>
     <section class="wrapper">
@@ -19,59 +20,11 @@
             <input type="checkbox" id="signupCheck" />
             <label for="signupCheck">I accept all terms & conditions</label>
           </div>
-          <input type="submit" value="Signup" onclick="addData()"/>
+          <input type="submit" value="Signup" onclick="reg()"/>
         </form>
       </div>
 
       <a href="login.html">Log in Instead</a>
-
-      <!-- <div class="form login">
-        <header>Login</header>
-        <form action="#">
-          <input type="text" placeholder="Email address" id="email" required />
-          <input type="password" placeholder="Password" id="password" required />
-          <a href="#">Forgot password?</a>
-          <input type="submit" value="Login" onclick="auth()" />
-        </form>
-      </div> -->
-      
-
-      <script>
-
-        if(document.getElementById("email").value === ""){
-          
-        }
-
-        function auth(){
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
-
-        var getEmail = localStorage.getItem('userEmail');
-	      var getPwd = localStorage.getItem('userPwd');
-
-          if(email == "admin@gmail.com" && password == "admin123"){
-            window.location.assign("home.html");
-            alert("Login Successfully");
-          }
-          
-          if(email == getEmail){
-            if(password == getPwd){
-                window.location.assign("home.html");
-                alert("Login Sucessful");
-            }
-            else alert("Wrong password")
-          }
-        }
-
-        function addData(){
-            var email2 = document.getElementById("eml").value;
-            var password2 = document.getElementById("pwd").value;
-
-            localStorage.setItem('userEmail',email2);
-	          localStorage.setItem('userPwd',password2);
-        }
-
-      </script>
     </section>
   </body>
 </html>
