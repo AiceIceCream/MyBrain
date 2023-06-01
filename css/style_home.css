@@ -82,6 +82,11 @@ header .icons a{
     transition: .5s;
 }
 
+#sign{
+    padding: 10px;
+    border-radius: 15px;
+}
+
 header .icons i:hover,
 header .icons a:hover{
     color: var(--red);

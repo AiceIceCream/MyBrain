@@ -38,4 +38,5 @@ function auth(){
     } else {
         alert('User Not Found!');
     }
+    document.getElementById("sign").innerHTML = username;
 }
