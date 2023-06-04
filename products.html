@@ -23,7 +23,7 @@
       </nav>
       <div class="icons">
         <i class="fa-solid fa-user"></i>
-        <a href="index.html" id="sign">Sign Out</a>
+        <a href="#" id="sign" onclick="signOut()">Sign Out</a>
       </div>
     </header>
     <main>
@@ -169,5 +169,11 @@
     </main>
 
     <script src="js/script_home.js"></script>
+    <script>
+      function signOut(){
+         window.location.assign("index.html")
+         window.alert("You are about to sign out!")
+       }
+     </script>
   </body>
 </html>

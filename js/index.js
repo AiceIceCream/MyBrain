@@ -7,5 +7,5 @@ menu.onclick = () => {
 }
 
 function notaMem(){
-    window.alert("You must sign in first to unlock this feature");
+    window.alert("You must sign in first to unlock this section");
 }

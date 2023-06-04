@@ -19,7 +19,7 @@
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fa-solid fa-user"></i>
-            <a href="index.html" id="sign">Sign Out</a>
+            <a href="#" id="sign" onclick="signOut()">Sign Out</a>
         </div>
     </header>
     <div class="person1">
@@ -86,5 +86,11 @@
       </div>
       </div>
 
+       <script>
+       function signOut(){
+          window.location.assign("index.html")
+          window.alert("You are about to sign out!")
+        }
+      </script>
 </body>
 </html>
