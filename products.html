@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="css/style_products.css" />
+    <script src="js/product.js" defer></script>
   </head>
   <body>
     <header>
@@ -22,131 +23,204 @@
       </div>
     </header>
     <main>
-      <div class="home">
-        <div class="grid">
-          <div class="grid-column">
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/Bl2.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Cosmonaut</h2>
-                  <p class="product-price">$ 10</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
 
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/Ju3.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Monster Milkshake</h2>
-                  <p class="product-price">$ 9</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/K4.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Juicy Banana</h2>
-                  <p class="product-price">$ 9</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
-          </div>
-          <div class="grid-column">
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/Bl4.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Palmistry</h2>
-                  <p class="product-price">$ 9</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/My4.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Fish With Gas Mask</h2>
-                  <p class="product-price">$ 12</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/OP4.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Gangster</h2>
-                  <p class="product-price">$ 5</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
-          </div>
-          <div class="grid-column">
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/OP5.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Adventure in a Bottle</h2>
-                  <p class="product-price">$ 15</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
-            <a class="product" href="#">
-              <div class="product-image">
-                <img src="images/Bl5.png" />
-              </div>
-              <div class="product-content">
-                <div class="product-info">
-                  <h2 class="product-title">Smoking Ain't Cool</h2>
-                  <p class="product-price">$ 5</p>
-                </div>
-                <button class="product-action">
-                  <i class="material-icons-outlined">favorite_border</i>
-                </button>
-              </div>
-            </a>
-          </div>
+      <div class="container">
+
+        <h3 class="title"> COLLECTIONS FIGURE </h3>
+     
+        <div class="products-container">
+     
+           <div class="product" data-name="p-1">
+              <img src="images/tanjiro.PNG" alt="">
+              <h3>Demon Slayer: Kimetsu No Yaiba Tanjiro Kamado</h3>
+              <div class="price">$24.90</div>
+           </div>
+     
+           <div class="product" data-name="p-2">
+              <img src="images/mahito.PNG" alt="">
+              <h3>Banpresto Jujutsu Kaisen Jukon No Kata Mahito</h3>
+              <div class="price">$29.90</div>
+           </div>
+     
+           <div class="product" data-name="p-3">
+              <img src="images/zoro.PNG" alt="">
+              <h3>Banpresto One Piece Roronoa Zoro</h3>
+              <div class="price">$23.92</div>
+           </div>
+     
+           <div class="product" data-name="p-4">
+              <img src="images/luffy.PNG" alt="">
+              <h3>Bandai Spirits One Piece Monkey D. Luffy</h3>
+              <div class="price">$19.90</div>
+           </div>
+     
+           <div class="product" data-name="p-5">
+              <img src="images/katsuki.PNG" alt="">
+              <h3>Banpresto My Hero Academia The Amazing Heroes Katsuki</h3>
+              <div class="price">$29.90</div>
+           </div>
+     
+           <div class="product" data-name="p-6">
+              <img src="images/nezuko.PNG" alt="">
+              <h3>Demon Slayer: Kimetsu No Yaiba Nezuko Kamado</h3>
+              <div class="price">$24.90</div>
+           </div>
+     
         </div>
+     
+     </div>
+     
+     <div class="products-preview">
+     
+        <div class="preview" data-target="p-1">
+           <i class="fas fa-times"></i>
+           <img src="images/tanjiro.PNG" alt="">
+           <h3>Tanjiro Kamado </h3>
+           <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>( 250 )</span>
+           </div>
+           <p>Demon Slayer: Kimetsu No Yaiba Tanjiro Kamado Vinyl Figure</p>
+           <div class="price">$24.90</div>
+           <div class="buttons">
+              <a href="#" class="buy">buy now</a>
+              <a href="#" class="cart">add to cart</a>
+           </div>
+        </div>
+     
+        <div class="preview" data-target="p-2">
+           <i class="fas fa-times"></i>
+           <img src="images/2.png" alt="">
+           <h3>organic onions</h3>
+           <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>( 250 )</span>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+           <div class="price">$2.00</div>
+           <div class="buttons">
+              <a href="#" class="buy">buy now</a>
+              <a href="#" class="cart">add to cart</a>
+           </div>
+        </div>
+     
+        <div class="preview" data-target="p-3">
+           <i class="fas fa-times"></i>
+           <img src="images/3.png" alt="">
+           <h3>organic tomatoes</h3>
+           <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>( 250 )</span>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+           <div class="price">$2.00</div>
+           <div class="buttons">
+              <a href="#" class="buy">buy now</a>
+              <a href="#" class="cart">add to cart</a>
+           </div>
+        </div>
+     
+        <div class="preview" data-target="p-4">
+           <i class="fas fa-times"></i>
+           <img src="images/4.png" alt="">
+           <h3>organic brinjal</h3>
+           <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>( 250 )</span>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+           <div class="price">$2.00</div>
+           <div class="buttons">
+              <a href="#" class="buy">buy now</a>
+              <a href="#" class="cart">add to cart</a>
+           </div>
+        </div>
+     
+        <div class="preview" data-target="p-5">
+           <i class="fas fa-times"></i>
+           <img src="images/5.png" alt="">
+           <h3>organic broccoli</h3>
+           <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>( 250 )</span>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+           <div class="price">$2.00</div>
+           <div class="buttons">
+              <a href="#" class="buy">buy now</a>
+              <a href="#" class="cart">add to cart</a>
+           </div>
+        </div>
+     
+        <div class="preview" data-target="p-6">
+           <i class="fas fa-times"></i>
+           <img src="images/6.png" alt="">
+           <h3>organic potatoes</h3>
+           <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>( 250 )</span>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+           <div class="price">$2.00</div>
+           <div class="buttons">
+              <a href="#" class="buy">buy now</a>
+              <a href="#" class="cart">add to cart</a>
+           </div>
+        </div>
+     
+     </div>
+      
+     
       </div>
     </main>
+    <script>
+            let preveiwContainer = document.querySelector('.products-preview');
+            let previewBox = preveiwContainer.querySelectorAll('.preview');
 
+            document.querySelectorAll('.products-container .product').forEach(product =>{
+            product.onclick = () =>{
+               preveiwContainer.style.display = 'flex';
+               let name = product.getAttribute('data-name');
+               previewBox.forEach(preview =>{
+                  let target = preview.getAttribute('data-target');
+                  if(name == target){
+                  preview.classList.add('active');
+                  }
+               });
+            };
+            });
+
+            previewBox.forEach(close =>{
+            close.querySelector('.fa-times').onclick = () =>{
+               close.classList.remove('active');
+               preveiwContainer.style.display = 'none';
+            };
+            });
+     </script>
     <script src="js/script_home.js"></script>
     <script>
       function signOut() {
