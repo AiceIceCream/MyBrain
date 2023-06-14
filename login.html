@@ -369,11 +369,12 @@
             id="loginEmail"
             maxlength="254"
             placeholder="email"
+            oninput="validateInput(this)"
           />
         </div>
         <div class="inputGroup inputGroup2">
           <label for="loginPassword" id="loginPasswordLabel">Password</label>
-          <input type="password" id="loginPassword" placeholder="password"/>
+          <input type="password" id="loginPassword" placeholder="password" oninput="validateInput(this)"/>
           <label id="showPasswordToggle" for="showPasswordCheck"
             >Show
             <input id="showPasswordCheck" type="checkbox" />

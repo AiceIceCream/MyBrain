@@ -363,24 +363,26 @@
 
         <div class="inputGroup inputGroup1">
           <label for="loginEmail" id="loginEmailLabel">Username</label>
-          <input type="text" id="usr" maxlength="254" placeholder="username"/>
+          <input type="text" id="usr" maxlength="254" placeholder="username" oninput="validateInput(this)" />
         </div>
         <div class="inputGroup inputGroup1">
           <label for="loginEmail" id="loginEmailLabel">Email</label>
-          <input type="text" id="loginEmail" maxlength="254" placeholder="email"/>
+          <input type="text" id="loginEmail" maxlength="254" placeholder="email" oninput="validateInput(this)" />
         </div>
         <div class="inputGroup inputGroup2">
           <label for="loginPassword" id="loginPasswordLabel">Password</label>
-          <input type="password" id="loginPassword" placeholder="password"/>
-
+          <input type="password" id="loginPassword" placeholder="password" oninput="validateInput(this)" />
+      
           <label id="showPasswordToggle" for="showPasswordCheck">Show
             <input id="showPasswordCheck" type="checkbox" />
             <div class="indicator"></div>
           </label>
         </div>
-        <label for="terms" style="font-size: 15px; text-align: justify;"><input id="terms" type="checkbox" style="height: 15px; width: 15px;">By checking this form you will agree to the Terms and Conditions
+        <label id="labels" for="terms" style="font-size: 15px; text-align: justify;">
+          <input id="terms" type="checkbox" style="height: 15px; width: 15px;" />
+          By checking this form you will agree to the Terms and Conditions
         </label>
-
+      
         <div class="inputGroup inputGroup3">
           <button id="login" onclick="reg()">Register</button>
           <a href="login.html" id="sign">Go to Login</a>
