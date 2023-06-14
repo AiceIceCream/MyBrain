@@ -86,6 +86,14 @@ header .icons a{
     padding: 10px;
     border-radius: 15px;
 }
+.prodImages {
+    display: flex;
+    justify-content: center;
+}
+  
+.prodImages img {
+    margin: 0 1px; 
+}
 
 header .icons i:hover,
 header .icons a:hover{
