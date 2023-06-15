@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style_products.css" />
     <script src="js/product.js" defer></script>
   </head>
@@ -84,18 +85,24 @@
               <i class="fas fa-star-half-alt"></i>
               <span>( 250 )</span>
            </div>
-           <p>Demon Slayer: Kimetsu No Yaiba Tanjiro Kamado Vinyl Figure</p>
+           <div class="Details">
+            <label>Quantity:</label>
+            <button class="add" onclick="addQuantity()">+</button><button class="minus" onclick="minQuantity()">-</button>
+            <p>Sub Total: ₱<span class="sub_total">1393</span></p>
+            <p>Quantity: <span class="Quantity">1</span></p>
+            <p>Shipping Fee: ₱<span class="ship">50</span></p>
+            <p>Total: ₱<span class="total">1443</span></p>
+         </div>
            <div class="price">$24.90</div>
            <div class="buttons">
-              <a href="#" class="buy">buy now</a>
-              <a href="#" class="cart">add to cart</a>
+              <a href="#" class="buy" onclick="checkOut()" >buy now</a>
            </div>
-        </div>
-     
+      </div>
+
         <div class="preview" data-target="p-2">
            <i class="fas fa-times"></i>
-           <img src="images/2.png" alt="">
-           <h3>organic onions</h3>
+           <img src="images/mahito.PNG" alt="">
+           <h3>Kata Mahito</h3>
            <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -104,18 +111,23 @@
               <i class="fas fa-star-half-alt"></i>
               <span>( 250 )</span>
            </div>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-           <div class="price">$2.00</div>
+           <div class="Details">
+            <label>Quantity:</label>
+            <button class="add" onclick="addQuantity()">+</button><button class="minus" onclick="minQuantity()">-</button>
+            <p>Sub Total: ₱<span class="sub_total">1673</span></p>
+            <p>Quantity: <span class="Quantity">1</span></p>
+            <p>Shipping Fee: ₱<span class="ship">50</span></p>
+            <p>Total: ₱<span class="total">1423</span></p>
+         </div>
+           <div class="price">$29.90</div>
            <div class="buttons">
-              <a href="#" class="buy">buy now</a>
-              <a href="#" class="cart">add to cart</a>
+              <a href="#" class="buy" onclick="checkOut()" >buy now</a>
            </div>
-        </div>
-     
+
         <div class="preview" data-target="p-3">
            <i class="fas fa-times"></i>
-           <img src="images/3.png" alt="">
-           <h3>organic tomatoes</h3>
+           <img src="images/zoro.PNG" alt="">
+           <h3>Roronoa Zoro</h3>
            <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -124,18 +136,23 @@
               <i class="fas fa-star-half-alt"></i>
               <span>( 250 )</span>
            </div>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-           <div class="price">$2.00</div>
+           <div class="Details">
+            <label>Quantity:</label>
+            <button class="add" onclick="addQuantity()">+</button><button class="minus" onclick="minQuantity()">-</button>
+            <p>Sub Total: ₱<span class="sub_total">1673</span></p>
+            <p>Quantity: <span class="Quantity">1</span></p>
+            <p>Shipping Fee: ₱<span class="ship">50</span></p>
+            <p>Total: ₱<span class="total">1423</span></p>
+         </div>
+           <div class="price">$29.90</div>
            <div class="buttons">
-              <a href="#" class="buy">buy now</a>
-              <a href="#" class="cart">add to cart</a>
+              <a href="#" class="buy" onclick="checkOut()" >buy now</a>
            </div>
-        </div>
      
         <div class="preview" data-target="p-4">
            <i class="fas fa-times"></i>
-           <img src="images/4.png" alt="">
-           <h3>organic brinjal</h3>
+           <img src="images/luffy.PNG" alt="">
+           <h3>Monkey D. Luffy</h3>
            <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -144,18 +161,23 @@
               <i class="fas fa-star-half-alt"></i>
               <span>( 250 )</span>
            </div>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-           <div class="price">$2.00</div>
+           <div class="Details">
+            <label>Quantity:</label>
+            <button class="add" onclick="addQuantity()">+</button><button class="minus" onclick="minQuantity()">-</button>
+            <p>Sub Total: ₱<span class="sub_total">1673</span></p>
+            <p>Quantity: <span class="Quantity">1</span></p>
+            <p>Shipping Fee: ₱<span class="ship">50</span></p>
+            <p>Total: ₱<span class="total">1423</span></p>
+         </div>
+           <div class="price">$29.90</div>
            <div class="buttons">
-              <a href="#" class="buy">buy now</a>
-              <a href="#" class="cart">add to cart</a>
+              <a href="#" class="buy" onclick="checkOut()" >buy now</a>
            </div>
-        </div>
      
         <div class="preview" data-target="p-5">
            <i class="fas fa-times"></i>
-           <img src="images/5.png" alt="">
-           <h3>organic broccoli</h3>
+           <img src="images/katsuki.PNG" alt="">
+           <h3>Katsuki</h3>
            <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -164,18 +186,23 @@
               <i class="fas fa-star-half-alt"></i>
               <span>( 250 )</span>
            </div>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-           <div class="price">$2.00</div>
+           <div class="Details">
+            <label>Quantity:</label>
+            <button class="add" onclick="addQuantity()">+</button><button class="minus" onclick="minQuantity()">-</button>
+            <p>Sub Total: ₱<span class="sub_total">1673</span></p>
+            <p>Quantity: <span class="Quantity">1</span></p>
+            <p>Shipping Fee: ₱<span class="ship">50</span></p>
+            <p>Total: ₱<span class="total">1423</span></p>
+         </div>
+           <div class="price">$29.90</div>
            <div class="buttons">
-              <a href="#" class="buy">buy now</a>
-              <a href="#" class="cart">add to cart</a>
+              <a href="#" class="buy" onclick="checkOut()" >buy now</a>
            </div>
-        </div>
      
         <div class="preview" data-target="p-6">
            <i class="fas fa-times"></i>
-           <img src="images/6.png" alt="">
-           <h3>organic potatoes</h3>
+           <img src="images/nezuko.PNG" alt="">
+           <h3>Nezuko Kamado</h3>
            <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -184,19 +211,95 @@
               <i class="fas fa-star-half-alt"></i>
               <span>( 250 )</span>
            </div>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-           <div class="price">$2.00</div>
+           <div class="Details">
+            <label>Quantity:</label>
+            <button class="add" onclick="addQuantity()">+</button><button class="minus" onclick="minQuantity()">-</button>
+            <p>Sub Total: ₱<span class="sub_total">1673</span></p>
+            <p>Quantity: <span class="Quantity">1</span></p>
+            <p>Shipping Fee: ₱<span class="ship">50</span></p>
+            <p>Total: ₱<span class="total">1423</span></p>
+         </div>
+           <div class="price">$29.90</div>
            <div class="buttons">
-              <a href="#" class="buy">buy now</a>
-              <a href="#" class="cart">add to cart</a>
+              <a href="#" class="buy" onclick="checkOut()" >buy now</a>
            </div>
-        </div>
      
      </div>
       
      
       </div>
     </main>
+   <script>
+         function product(){
+         location.assign("products.html");
+         }
+
+         let quant = 0;
+         let subTotal = 0;
+         let ship = 50;
+         let total = 0;
+         let qty = 0;
+         let total_check = 0;
+
+         function addQuantity(){
+            quant = quant + 1;
+            subTotal = subTotal + 4236;
+            total = subTotal + ship;
+
+            document.getElementById("Quantity").innerHTML = quant;
+            // document.getElementById("quantity").innerHTML = quant;
+            document.getElementById("sub_total").innerHTML = subTotal;
+            document.getElementById("total").innerHTML = total;
+
+            if(quant > 10){
+               alert("Limit Reach!");
+               quant = 10;
+               subTotal = 42360;
+               total =42410;
+
+               document.getElementById("Quantity").innerHTML = quant;
+               // document.getElementById("quantity").innerHTML = quant;
+               document.getElementById("sub_total").innerHTML = subTotal;
+               document.getElementById("total").innerHTML = total;
+            }
+         }
+
+         function minQuantity(){
+            quant = quant - 1;
+            subTotal = subTotal - 4236;
+            total = total - 4236;
+
+            document.getElementById("Quantity").innerHTML = quant;
+            // document.getElementById("quantity").innerHTML = quant;
+            document.getElementById("sub_total").innerHTML = subTotal;
+            document.getElementById("total").innerHTML = total;
+
+            if(quant < 0){
+               quant = 1;
+               subTotal = 4236;
+               total = 4286;
+
+               alert("Invalid Quantity");
+
+               document.getElementById("Quantity").innerHTML = quant;
+               // document.getElementById("quantity").innerHTML = quant;
+               document.getElementById("sub_total").innerHTML = subTotal;
+               document.getElementById("total").innerHTML = total;
+            }
+         }
+
+         function checkOut(){
+            qty = qty + quant;
+            total_check = total;
+
+            document.getElementById("qty").innerHTML = qty;
+            document.getElementById("total_check").innerHTML = total_check;
+            document.getElementById("checkOut").style.display = "";
+            document.getElementById("wrap").style.display = "None";
+         }
+   </script>
+
+
     <script>
             let preveiwContainer = document.querySelector('.products-preview');
             let previewBox = preveiwContainer.querySelectorAll('.preview');
@@ -220,13 +323,14 @@
                preveiwContainer.style.display = 'none';
             };
             });
+
      </script>
-    <script src="js/script_home.js"></script>
-    <script>
-      function signOut() {
-        window.location.assign("index.html");
-        window.alert("You are about to sign out!");
-      }
+      <script src="js/script_home.js"></script>
+      <script>
+         function signOut() {
+         window.location.assign("index.html");
+         window.alert("You are about to sign out!");
+         }
     </script>
   </body>
 </html>
