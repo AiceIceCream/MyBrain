@@ -6,89 +6,96 @@
 }
 
 :root{
-    --red: #680000;
-    --black: #000000;
-    --light-color:#181818;
-    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+   --red: #680000;
+   --black: #000000;
+   --light-color:#181818;
+   --box-shadow: 0 .5rem 1.5rem rgb(75, 0, 0);
 }
 
 *{
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   outline: none;
+   border: none;
+   text-transform: capitalize;
+   transition: all .2s linear;
 }
 
 html{
-    font-size: 62.5%;
-    overflow-x: hidden;
- }
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 5.5rem;
+
+}
 
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: var(--black);
-    padding: 1rem 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10000;
-    box-shadow: var(--box-shadow);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: var(--black);
+   padding: 1rem 7%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   box-shadow: var(--box-shadow);
 }
 
 header .logo{
-    color: #ffff;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    font-family: Vermin;
+   color: #ffff;
+   font-size: 2.5rem;
+   font-weight: bolder;
+   font-family: Vermin;
 }
 
 header .navbar a{
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    color: #ffff;
-    transition: 1s;
+   font-size: 1.7rem;
+   border-radius: .5rem;
+   padding: .5rem 1.5rem;
+   color: #ffff;
+   transition: 1s;
 }
 
 header .navbar a.active,
 header .navbar a:hover{
-    color: #ffff;
-    background: var(--red);
+   color: #ffff;
+   background: var(--red);
 
 }
 
 header .icons i,
 header .icons a{
-    cursor: pointer;
-    margin-left: .5rem;
-    height: 4.5rem;
-    line-height: 4.5rem;
-    width: 4.5rem;
-    text-align: center;
-    font-size: 1.7rem;
-    color: #ffff;
-    border-radius: 50%;
-    background: var(--red);
-    transition: .5s;
+   cursor: pointer;
+   margin-left: .5rem;
+   height: 4.5rem;
+   line-height: 4.5rem;
+   width: 4.5rem;
+   text-align: center;
+   font-size: 1.7rem;
+   color: #ffff;
+   border-radius: 50%;
+   background: var(--red);
+   transition: .5s;
+}
+
+#sign{
+   padding: 10px;
+   border-radius: 15px;
 }
 
 header .icons i:hover,
 header .icons a:hover{
-    color: var(--red);
-    background: #ffff;
-    transform: scale(1.1);
+   color: var(--red);
+   background: #ffff;
+   transform: scale(1.1);
 }
 
 header .icons #menu-bars{
-    display: none;
+   display: none;
 }
 
 .home{
@@ -344,4 +351,113 @@ body{
       font-size: 50%;
    }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media(max-width: 991px){
+   html{
+       font-size: 55%;
+   }
+
+   header{
+       padding: 1rem 2rem;
+   }
+}
+
+@media(max-width: 768px){
+   header .icons #menu-bars{
+       display: inline-block;
+   }
+   header .navbar{
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0;
+       background: var(--black);
+       border-top: .1rem solid rgba(0,0,0,.2);
+       border-bottom: .1rem solid rgba(0,0,0,.2);
+       padding: 1rem;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   header .navbar.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+   header .navbar a{
+       display: block;
+       padding: 1.5rem;
+       margin: 1rem;
+       font-size: 2rem;
+       background: var(--red);
+
+   }
+}
+
+@media(max-width: 468px){
+   html{
+       font-size: 50%;
+   }
 }

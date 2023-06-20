@@ -86,14 +86,6 @@ header .icons a{
     padding: 10px;
     border-radius: 15px;
 }
-.prodImages {
-    display: flex;
-    justify-content: center;
-}
-  
-.prodImages img {
-    margin: 0 1px; 
-}
 
 header .icons i:hover,
 header .icons a:hover{
@@ -192,6 +184,15 @@ filter: grayscale();
 .home .box .content a span{
     color: var(--black);
     font-family: Vermin;
+}
+
+.prodImages {
+    display: flex;
+    justify-content: center;
+}
+  
+.prodImages img {
+    margin: 0 1px; 
 }
 
 

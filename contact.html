@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">MyBrain</a>
+        <a href="home.html" class="logo">MyBrain</a>
         <nav class="navbar">
             <a href="home.html" >Home</a>
             <a href="products.html">Products</a>
@@ -18,7 +22,6 @@
         </nav>
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
-            <i class="fa-solid fa-user"></i>
             <a href="#" id="sign" onclick="signOut()">Sign Out</a>
         </div>
     </header>
@@ -94,6 +97,14 @@
            window.location.assign("index.html")
            window.alert("You are about to sign out!")
          }
+
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-time');
+            navbar.classList.toggle('active');
+        }
        </script>
 </body>
 </html>

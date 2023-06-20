@@ -120,6 +120,7 @@ function reg() {
     ) {
       window.location.assign('home.html');
       alert('Successfully Login!');
+      document.getElementById("user").textContent = key.username;
     } else if (username.value === 'admin@gmail.com' && password.value === 'admin123') {
       window.location.assign('home.html');
       alert('Successfully Login as Admin!');
