@@ -21,8 +21,9 @@
             <a href="contact.html">Contact Us</a>
         </nav>
         <div class="icons">
-            <i class="fas fa-bars" id="menu-bars"></i>
-            <a href="#" id="sign" onclick="signOut()">Sign Out</a>
+          <i class="fas fa-bars" id="menu-bars"></i>
+          <i class="fa-solid fa-user" id="user"></i>
+          <a href="#" id="sign" onclick="signOut()">Sign Out</a>
         </div>
     </header>
     <div class="person1">
@@ -75,7 +76,7 @@
         </p>
       </div>
       <div class="wrap">
-        <button class="button">Contact Us</button>
+        <button class="button" onclick="contact()">Contact Us</button>
       </div>
       <!-- Site footer -->
       <div class="foot">
@@ -102,6 +103,9 @@
             navbar.classList.toggle('active');
         }
         
+        function contact(){
+          window.location.assign('contact.html')
+        }
       </script>
 </body>
 </html>

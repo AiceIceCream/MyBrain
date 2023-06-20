@@ -299,6 +299,16 @@ header .icons #menu-bars{
   header{
       padding: 1rem 2rem;
   }
+  .paragraph{
+    position: absolute;
+    justify-content: flex-end;
+    right: 10%;
+    top: 60%;
+    line-height: 1.5em;
+    text-align: start;
+    font-family: tahoma;
+    font-size: medium;
+  }
 }
 
 @media(max-width: 768px){
@@ -327,6 +337,29 @@ header .icons #menu-bars{
       font-size: 2rem;
       background: var(--red);
 
+  }
+
+  h1{
+    position: absolute;
+    top: 340px;
+    right: 250px;
+  }
+
+  .paragraph{
+    position: absolute;
+    justify-content: flex-end;
+    right: 10%;
+    top: 90%;
+    line-height: 1.5em;
+    text-align: start;
+    font-family: tahoma;
+    font-size: medium;
+  }
+
+  .button{
+    position: absolute;
+    top: 380px;
+    left: 100px;
   }
 }
 
