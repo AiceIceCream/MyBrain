@@ -1,6 +1,4 @@
 function validateInput(input) {
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
     if (input.value === '') {
       input.classList.remove('success');
       input.classList.add('error');
@@ -11,8 +9,7 @@ function validateInput(input) {
   }
 
 function validateEmail(email) {
-    // Regular expression for validating email addresses
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var emailPattern = /@/;
     return emailPattern.test(email);
 }
 
@@ -80,6 +77,7 @@ function reg() {
       localStorage.setItem('user', json);
       console.log('User Added');
       alert('You are now registered! Please proceed to Login');
+
   
       username.value = '';
       password.value = '';
@@ -90,9 +88,9 @@ function reg() {
       username.classList.remove('error');
       password.classList.remove('error');
       email.classList.remove('error');
-      username.placeholder = 'Username';
-      password.placeholder = 'Password';
-      email.placeholder = 'Email';
+      username.placeholder = 'Succesfully Registered!';
+      password.placeholder = 'Succesfully Registered!';
+      email.placeholder = 'Succesfully Registered!';
     }
   }
 
@@ -120,14 +118,20 @@ function reg() {
     ) {
       window.location.assign('home.html');
       alert('Successfully Login!');
-      document.getElementById("user").textContent = key.username;
+      username.value = '';
+      password.value = '';
     } else if (username.value === 'admin@gmail.com' && password.value === 'admin123') {
       window.location.assign('home.html');
       alert('Successfully Login as Admin!');
+      username.value = '';
+      password.value = '';
     } else {
       alert('User Not Found!');
+      username.classList.remove('success');
+      password.classList.remove('success');
       username.classList.add('error');
       password.classList.add('error');
+      hasError = true;
     }
   }
   

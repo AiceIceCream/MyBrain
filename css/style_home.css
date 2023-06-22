@@ -278,7 +278,6 @@ filter: grayscale();
         margin: 1rem;
         font-size: 2rem;
         background: var(--red);
-
     }
 }
 

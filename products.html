@@ -118,15 +118,15 @@
            </div>
            <div class="Details">
             <label>Quantity:</label>
-            <button class="add" onclick="addQuantity()">+</button><button class="minus" onclick="minQuantity()">-</button>
-            <p>Sub Total: ₱<span class="sub_total">1673</span></p>
-            <p>Quantity: <span class="Quantity">1</span></p>
-            <p>Shipping Fee: ₱<span class="ship">50</span></p>
-            <p>Total: ₱<span class="total">1423</span></p>
+            <button id="add" onclick="addQuantity()">+</button><button id="minus" onclick="minQuantity()">-</button>
+            <p>Sub Total: ₱<span id="sub_total">1673</span></p>
+            <p>Quantity: <span id="Quantity">1</span></p>
+            <p>Shipping Fee: ₱<span id="ship">50</span></p>
+            <p>Total: ₱<span id="total">1423</span></p>
          </div>
            <div class="price">$29.90</div>
            <div class="buttons">
-              <a href="#" class="buy" onclick="checkOut()" >buy now</a>
+              <a href="#" id="buy" onclick="checkOut()" >buy now</a>
            </div>
 
         <div class="preview" data-target="p-3">

@@ -290,13 +290,13 @@ body{
    color:#fff;
 }
 /* Quantity */
-.Details p {
+#Details p {
    padding: 2%;
    text-align: center;
    width: 100%; 
 }
 
-.add{
+#add{
    left: 40%;
    border-radius: 50px;
    border-style: none;
@@ -304,24 +304,24 @@ body{
    width: 15%;
 }
 
-.minus{
+#minus{
    left: 55%;
    border-radius: 50px;
    border-style: none;
    transition: 1s;
    width: 15%;
 }
-.add:hover{
+#add:hover{
    color: var(--red);
    background-color: gray;
 }
 
-.minus:hover{
+#minus:hover{
    color: var(--red);
    background-color: gray;
 }
 
-.quantity{
+#quantity{
    position: absolute;
    text-align: justify;
    left: 50%;
